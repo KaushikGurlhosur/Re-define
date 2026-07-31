@@ -40,8 +40,8 @@ body {
     src: url("/fonts/general.woff2") format("woff2");
   }
   @font-face {
-    font-family: "robert-medium";
-    src: url("/fonts/robert-medium.woff2") format("woff2");
+    font-family: "zentry";
+    src: url("/fonts/zentry-regular.woff2") format("woff2");
   }
   @font-face {
     font-family: "robert-regular";
@@ -75,12 +75,12 @@ body {
   }
 
   .special-font b {
-    font-family: "Zentry";
+    font-family: "zentry";
     font-feature-settings: "ss01" on;
   }
 
   .hero-heading {
-    @apply uppercase font-zentry font-black text-5xl sm:right-10 sm:text-7xl md:text-9xl lg:text-[12rem];
+    @apply uppercase font-zentry font-black text-5xl sm:right-10 sm:text-7xl md:text-xl lg:text-[12rem];
   }
 
   .about-subtext {
