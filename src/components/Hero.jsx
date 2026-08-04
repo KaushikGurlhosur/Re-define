@@ -65,16 +65,28 @@ const Hero = () => {
   useGSAP(() => {
     gsap.set("#video-frame", {
       clipPath: "polygon(14% 0, 72% 0, 88% 90%, 0 95%)",
-      borderRadius: "0 0 40% 0%",
+      borderRadius: "0 0 40% 10%",
     });
 
     gsap.from("#video-frame", {
       clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
       borderRadius: "0 0 0 0",
       ease: "power1.inOut",
+
       scrollTrigger: {
         trigger: "#video-frame",
         start: "top top",
+        end: "bottom center",
+        scrub: true,
+      },
+    });
+
+    gsap.to("#gaming", {
+      scale: "1.1",
+      ease: "power1.inOut",
+      scrollTrigger: {
+        trigger: "#gaming",
+        start: "top center",
         end: "bottom center",
         scrub: true,
       },
@@ -136,7 +148,9 @@ const Hero = () => {
             className="absolute left-0 top-0 size-full object-cover object-center"
           />
         </div>
-        <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75">
+        <h1
+          id="gaming"
+          className="special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75">
           G<b>A</b>ming
         </h1>
 
@@ -158,7 +172,9 @@ const Hero = () => {
         </div>
       </div>
 
-      <h1 className="special-font hero-heading absolute bottom-5 right-5 text-black">
+      <h1
+        id="gaming"
+        className="special-font hero-heading absolute bottom-5 right-5 text-black">
         G<b>A</b>ming
       </h1>
     </div>
