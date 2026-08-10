@@ -50,8 +50,8 @@ const Features = () => {
           />
         </div>
 
-        <div className="grid h-[135vh] grid-cols-2 grid-rows-3 gap-7">
-          <div className="bento-tilt_1 row-span-1 md:col-span-2 md:row-span-2">
+        <div className="grid h-[135vh] grid-flow-col grid-row-3 gap-7 mb-7 ">
+          <div className="bento-tilt_1 row-span-4">
             <BentoCard
               src="/videos/feature-2.mp4"
               title={
@@ -63,7 +63,7 @@ const Features = () => {
             />
           </div>
 
-          <div className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0">
+          <div className="bento-tilt_1 col-span-2 row-span-2">
             <BentoCard
               src="/videos/feature-3.mp4"
               title={
@@ -74,7 +74,8 @@ const Features = () => {
               description="A gamified social hub, adding a new dimension of play to social interaction for Web3 communities."
             />
           </div>
-          <div className="bento-tilt_1 row-span-1 me-14 md:col-span-1 md:me-0">
+
+          <div className="bento-tilt_1 col-span-2 row-span-2">
             <BentoCard
               src="/videos/feature-4.mp4"
               title={
@@ -85,7 +86,9 @@ const Features = () => {
               description="A cross-world AI Agent - elevating your gameplay to be more fun and productive."
             />
           </div>
+        </div>
 
+        <div className="grid grid-cols-2 gap-7">
           <div className="bento-tilt_2">
             <div className="flex size-full flex-col justify-between bg-violet-300 p-5">
               <h1 className="bento-title special-font max-w-64 text-black">
