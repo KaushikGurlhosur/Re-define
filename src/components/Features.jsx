@@ -50,7 +50,7 @@ const Features = () => {
           />
         </div>
 
-        <div className="grid h-[135vh] grid-flow-col grid-row-3 gap-7 mb-7 ">
+        <div className="grid h-screen md:grid-flow-col md:grid-row-3 gap-4 md:gap-7 mb-3 md:mb-7 ">
           <div className="bento-tilt_1 row-span-4">
             <BentoCard
               src="/videos/feature-2.mp4"
@@ -103,6 +103,7 @@ const Features = () => {
               src="/videos/feature-5.mp4"
               loop
               autoPlay
+              muted
               className="size-full object-cover object-center"
             />
           </div>
